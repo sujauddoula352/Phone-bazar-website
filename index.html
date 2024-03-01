@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Bazar</title>
+    <!-- Tailwind and DaisyUi link -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,700&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+
+<style>
+  .barlow-regular {
+  font-family: "Barlow", sans-serif;
+
+}
+  
+</style>
+
+</head>
+<body class="barlow-regular">
+ <header class="bg-[#0D6EFD0D] mb-72 relative">
+    <!-- navbar section -->
+    <section class="container mx-auto">
+        <div class="navbar">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-xl text-[#6d6565] font-semibold">Phone Bazar</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-active btn-accent text-xl text-white font-semibold bg-[#0D6EFD]">Sign Up</a>
+            </div>
+        </div>  
+    </section>
+
+    <section class="container mx-auto mt-6 pb-72">
+     <div>
+        <h1 class="text-5xl font-semibold  uppercase text-center my-6">Apple iPhone 15 Pro and iPhone 15 Pro Max </h1>
+        <p class="text-xl text-center  ">USB-C! Titanium makes for a lighter phone. The newly added Action Button is handy. Nearly two-day battery on the Pro Max. Great cameras, especially the 5X zoom.The smaller iPhone 15 Pro feels neglected. No faster charging. Included cable doesn't support USB 3 data speeds.</p>
+     </div>
+     <div class="left-96 my-24 absolute">
+        <img class="rounded-3xl" src="./img/banner2.png">
+     </div>
+    </section>
+ </header>
+
+
+
+
+ <main class=" container mx-auto">
+
+    <section class=" container my-24">
+            <h1 class="text-3xl font-semibold text-center">Search your phone</h1>
+            <div class="my-10 text-center">
+                <input id="search-field" type="text" placeholder="Search your phone....." class="input input-bordered input-primary w-1/2"/>
+                <button onclick="handleSearch()" class="btn btn-secondary text-xl"> Search </button>
+            </div>
+
+
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+            
+        </section>
+    
+    </main>
+    
+    <footer class="navbar border-[3px] hidden border-red-500">
+        
+    <script src="./js/phone.js"></script>
+
+</footer>
+</body>
+</html>
